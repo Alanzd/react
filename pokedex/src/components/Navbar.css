@@ -1,0 +1,56 @@
+nav{
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 4px 4px 8px #00000020;
+}
+
+nav svg {
+  height: 3rem;
+  width: auto;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch > svg {
+  height: 1.5rem;
+  width: auto;
+}
+
+.switch label{
+  background-color: #ccc;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.slider {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 1.4rem;
+  background-color: white;
+}
+
+
+/* cuando el checkbox está checked afecto a la clase slider */
+.check-switch:checked + .slider {
+  transform: translateX(1.3rem);
+}
+
+.check-switch:not(:checked) + .slider {
+  transform: translateX(-1.3rem);
+}
+
+.check-switch {
+  opacity: 0;
+}
