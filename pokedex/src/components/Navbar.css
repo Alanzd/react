@@ -44,11 +44,11 @@ nav svg {
 
 /* cuando el checkbox está checked afecto a la clase slider */
 .check-switch:checked + .slider {
-  transform: translateX(1.3rem);
+  transform: translateX(1.5rem);
 }
 
 .check-switch:not(:checked) + .slider {
-  transform: translateX(-1.3rem);
+  transform: translateX(-0.7rem);
 }
 
 .check-switch {
