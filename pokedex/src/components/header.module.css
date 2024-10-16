@@ -1,0 +1,21 @@
+/* se carga este archivo el estilo solo si el componente se ha cargado */
+
+
+header {
+  display: grid;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  place-items: center;
+  background: var(--bg-gradient)
+}
+  
+.input {
+  color: black ;
+  background-color: rgba(24, 22, 22, 0.267);
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  border: none;
+  width: 90%
+}
