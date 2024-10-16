@@ -13,11 +13,11 @@ export const Footer = () => {
       Pokemons
     </Link>
     <Link className='footerLink' to="/pokemons">
-      <img className='footerIcon' src={LocationPic} alt="pokeball" />
+      <img className='footerIcon' src={LocationPic} alt="pikachu" />
       Items
     </Link>
     <Link className='footerLink' to="/pokemons">
-      <img className='footerIcon' src={ItemPic} alt="pokeball" />
+      <img className='footerIcon' src={ItemPic} alt="link" />
       Map
     </Link>
   </footer>
