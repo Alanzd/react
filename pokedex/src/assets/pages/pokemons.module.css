@@ -10,7 +10,7 @@
     margin-right: 15px;
 }
 
-.listItem > :last-child {
+.listItem > :last-child { 
     margin: 0;
 }
 
@@ -30,7 +30,6 @@
         rgb(137, 234, 134) 100%
     );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1rem;
     display: block;
     margin-bottom: 11px;

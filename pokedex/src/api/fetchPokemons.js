@@ -1,1 +1,0 @@
-// https://unpkg.com/browse/pokemon@0.7.0/pokemon.json
