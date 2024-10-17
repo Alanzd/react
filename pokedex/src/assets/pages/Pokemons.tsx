@@ -8,8 +8,8 @@ import BulbasaurPic from '../images/bulbasaur.gif'
 
 
 export const Pokemons = () => {
-
-  const [query, setQuery] = useState ("")
+  const [query, setQuery] = useState ("");
+  
   return (
     <>
       <Header query={query} setQuery={setQuery}/>
