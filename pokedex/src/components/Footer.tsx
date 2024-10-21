@@ -1,26 +1,36 @@
-import React from 'react'
-import styles from './footer.module.css'
-import { Link } from 'react-router-dom'
-import PokemonPic from '../assets/images/pikachu.png';
-import LocationPic from '../assets/images/pokeball.png';
-import ItemPic from '../assets/images/location.png';
+import { Link } from "react-router-dom";
+import styles from "./footer.module.css";
 
-export const Footer = () => {
+// Assets
+import PokemonPic from "../assets/pikachu.png";
+import LocationPic from "../assets/pointer.png";
+import ItemsPic from "../assets/pokeball.png";
+
+const Footer = () => {
   return (
     <footer className={styles.footer}>
-    <Link to="/pokemons" className='footerLink'>
-      <img className='footerIcon' src={PokemonPic} alt="pokeball" />
-      Pokemons
-    </Link>
-    <Link className='footerLink' to="/pokemons">
-      <img className='footerIcon' src={LocationPic} alt="pikachu" />
-      Items
-    </Link>
-    <Link className='footerLink' to="/pokemons">
-      <img className='footerIcon' src={ItemPic} alt="link" />
-      Map
-    </Link>
-  </footer>
-  )
-}
+      <Link className={styles.footerLink} to="/pokemons">
+        <img className={styles.footerIcon} src={PokemonPic} alt="Pokemon" />
+        Pokemons
+      </Link>
+      <Link
+        className={styles.footerLink}
+        onClick={(event) => event.preventDefault()}
+        to="/items"
+      >
+        <img className={styles.footerIcon} src={ItemsPic} alt="Pokemon" />
+        Items
+      </Link>
+      <Link
+        className={styles.footerLink}
+        onClick={(event) => event.preventDefault()}
+        to="/location"
+      >
+        <img className={styles.footerIcon} src={LocationPic} alt="Pokemon" />
+        Mapa
+      </Link>
+    </footer>
+  );
+};
 
+export default Footer;
